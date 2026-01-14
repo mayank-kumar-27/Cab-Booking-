@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -133,8 +133,7 @@
                     <div class="form-group">
                         <label for="tripType">Trip Type *</label>
                         <select id="tripType" name="tripType" required>
-                            <option value="">Select trip type</option>
-                            <option value="One-way">One-way</option>
+                            <option value="One-way" selected>One-way</option>
                             <option value="Round trip">Round trip</option>
                         </select>
                         <span class="error-message" id="tripTypeError"></span>
@@ -388,35 +387,87 @@
             <h2 class="section-title">Why Choose Us</h2>
             <p class="section-subtitle">Your comfort and safety is our priority</p>
             
+            <div class="trust-metrics">
+                <div class="metric">
+                    <div class="metric-value">1000+</div>
+                    <div class="metric-label">Happy Customers</div>
+                </div>
+                <div class="metric">
+                    <div class="metric-value">10+</div>
+                    <div class="metric-label">Years Experience</div>
+                </div>
+                <div class="metric">
+                    <div class="metric-value">100k+</div>
+                    <div class="metric-label">Safe Kilometers</div>
+                </div>
+                <div class="metric">
+                    <div class="metric-value">4.8★</div>
+                    <div class="metric-label">Customer Rating</div>
+                </div>
+            </div>
+            
             <div class="features-grid">
                 <div class="feature-card">
-                    <div class="feature-icon">🕐</div>
+                    <div class="feature-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/>
+                        </svg>
+                    </div>
                     <h3>24×7 Support</h3>
                     <p>Round-the-clock customer service for all your travel needs</p>
                 </div>
 
                 <div class="feature-card">
-                    <div class="feature-icon">✓</div>
+                    <div class="feature-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                        </svg>
+                    </div>
                     <h3>Verified Drivers</h3>
                     <p>All drivers are background-checked and professionally trained</p>
                 </div>
 
                 <div class="feature-card">
-                    <div class="feature-icon">✨</div>
+                    <div class="feature-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.85 7h10.29l1.08 3.11H5.77L6.85 7zM19 17H5v-5h14v5z"/>
+                            <circle cx="7.5" cy="14.5" r="1.5"/>
+                            <circle cx="16.5" cy="14.5" r="1.5"/>
+                        </svg>
+                    </div>
                     <h3>Clean Cars</h3>
                     <p>Well-maintained and sanitized vehicles for a comfortable journey</p>
                 </div>
 
                 <div class="feature-card">
-                    <div class="feature-icon">⏰</div>
+                    <div class="feature-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"/>
+                            <path d="M12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z"/>
+                        </svg>
+                    </div>
                     <h3>On-Time Pickup</h3>
                     <p>Punctual service to ensure you never miss your schedule</p>
                 </div>
 
                 <div class="feature-card">
-                    <div class="feature-icon">💰</div>
+                    <div class="feature-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z"/>
+                        </svg>
+                    </div>
                     <h3>Transparent Pricing</h3>
                     <p>No hidden charges - what you see is what you pay</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z"/>
+                        </svg>
+                    </div>
+                    <h3>Safe & Secure</h3>
+                    <p>Fully insured rides with real-time tracking for your safety</p>
                 </div>
             </div>
         </div>
@@ -466,36 +517,6 @@
                     <div class="stars">⭐⭐⭐⭐⭐</div>
                     <p class="testimonial-text">"Very reliable service. Used them multiple times for trips to Nepal. Always satisfied!"</p>
                     <p class="testimonial-author">- Kavita Jha</p>
-                </div>
-
-                <div class="testimonial-card">
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p class="testimonial-text">"Excellent service! The driver was punctual and very professional. Made my trip to Kathmandu very comfortable."</p>
-                    <p class="testimonial-author">- Rajesh Kumar</p>
-                </div>
-
-                <div class="testimonial-card">
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p class="testimonial-text">"Clean car, safe driving, and affordable rates. Highly recommend for anyone traveling from Purnia."</p>
-                    <p class="testimonial-author">- Priya Singh</p>
-                </div>
-
-                <div class="testimonial-card">
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p class="testimonial-text">"Booked for a family trip to Darjeeling. The tempo traveller was spacious and the journey was smooth."</p>
-                    <p class="testimonial-author">- Amit Sharma</p>
-                </div>
-
-                <div class="testimonial-card">
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p class="testimonial-text">"Best cab service in Purnia! 24x7 support helped me book a last-minute ride to Patna. Thank you!"</p>
-                    <p class="testimonial-author">- Neha Gupta</p>
-                </div>
-
-                <div class="testimonial-card">
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p class="testimonial-text">"Professional drivers who know all routes well. Made my business trips hassle-free."</p>
-                    <p class="testimonial-author">- Suresh Yadav</p>
                 </div>
 
                 <div class="testimonial-card">
@@ -624,8 +645,11 @@
                 </div>
 
                 <div class="footer-section">
-                    <h4>Service Area</h4>
-                    <p>Nationwide coverage, serving customers across India.</p>
+                    <h4>Quick Links</h4>
+                    <p><a href="#routes">Popular Routes</a></p>
+                    <p><a href="#cars">Our Fleet</a></p>
+                    <p><a href="#places">Destinations</a></p>
+                    <p><a href="#faq">FAQ</a></p>
                 </div>
             </div>
 
