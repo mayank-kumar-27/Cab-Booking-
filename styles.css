@@ -1476,11 +1476,7 @@ body {
     }
     
     .hero-cta {
-        flex-direction: column;
-    }
-    
-    .hero-cta .btn {
-        width: 100%;
+        display: none;
     }
     
     .form-actions {
